@@ -1,0 +1,91 @@
+.shangcheng{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    .nav1{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 0.2rem;
+        a{
+            width: 22%;
+            height: 1.8rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .nav2{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        a{
+            width: 18%;
+            height: 1.5rem;
+            text-align: center;
+            color:#000;
+            img{
+                width: 1rem;
+                margin-left: 0.2rem;
+                height: 1rem;
+                margin-bottom: 0.1rem;
+                margin-top: 0.1rem;
+
+            }
+        }
+    }
+    h4{
+        width: 2.2rem;
+        margin: 0.3rem auto;
+    }
+    .goods{
+        width: 100%;
+        background-color: #f5f4f4;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+        .goodsList{
+            background-color: #fff;
+            width: 46%;
+            height: 6.7rem;
+            margin-bottom: 0.2rem;
+            img{
+                width: 100%;
+                height: 5rem;
+            }
+            p{
+                white-space:nowrap;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                width: 100%;
+                margin: 0.1rem 0;
+            }
+            .price{
+                padding: 0 0.2rem;
+                margin-bottom: 0.2rem;
+                span{
+                    float: right;
+                }
+                b{
+                    float: left;
+                }
+            }
+            .am-button{
+                background-color: rgb(255, 87, 119);
+                height: 0.5rem;
+                width: 95%;
+                color: #fff;
+                margin: 0 auto;
+                line-height: 0.5rem;
+                display: block;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
