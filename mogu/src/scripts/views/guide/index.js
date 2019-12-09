@@ -26,8 +26,9 @@ export default class Guide extends Component {
         else {
             window.event.cancelBubble = true;
         }
-        clearInterval(timer)
+     
         history.push("/main")
+        clearInterval(timer);
     };
     startCount() {
         timer = setInterval(() => {
@@ -36,19 +37,21 @@ export default class Guide extends Component {
                     count: --this.state.count,
                     txt: `跳过 ${this.state.count}s`
                 })
-                console.log(11111)           
+                
+                console.log(11111)  
+                      
             } 
             if(this.state.count < 0){
                 this.setState({
                     count: 3,
                 })
-                clearInterval(timer)
+                clearInterval(timer);
                 console.log(22222)
             }
             
+            
         }, 1000);
     }
-
   
     render() {
         return (
@@ -83,9 +86,6 @@ export default class Guide extends Component {
             </div>
         )
     }
-    componentWillUnmount(){
-        clearInterval(timer);
-        timer = null;
-    }
+  
     
 }

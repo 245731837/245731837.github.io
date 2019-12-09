@@ -20,7 +20,7 @@ class Home3 extends Component {
                         return(
                             <a href={item.modelData.link} className="wrap" key={index}>
                                 <img src={item.modelData.cover} alt=""/>
-                                <p>{item.modelData.desc}</p>
+                                <p id="hp">{item.modelData.desc}</p>
                             </a>
 
                         )

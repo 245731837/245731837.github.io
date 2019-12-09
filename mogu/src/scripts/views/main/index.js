@@ -15,6 +15,7 @@ const Home =Lazyload(()=>import("../home"))
 const Mine =Lazyload(()=>import("../mine"))
 const Zhibo =Lazyload(()=>import("../zhibo"))
 const Shangcheng =Lazyload(()=>import("../shangcheng"))
+// const Details =Lazyload(()=>import("../details"))
 
  class Main extends Component {
     render(){
@@ -28,6 +29,7 @@ const Shangcheng =Lazyload(()=>import("../shangcheng"))
                     <Route path ="/main/home" component={Home} />  
                     <Route path ="/main/mine" component={Mine} />  
                     <Route path ="/main/zhibo" component={Zhibo} />  
+                    {/* <Route path ="/main/details/:iid" component={Details}/>   */}
                     <Route path ="/main/shangcheng" component={Shangcheng} />  
                     <Route render = { () => (<Redirect to="/main/home"/>) } />
                 </Switch>

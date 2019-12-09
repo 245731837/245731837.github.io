@@ -4,7 +4,8 @@ import {Toast} from "antd-mobile"
 import {history} from "./history";
 
 var token = "";
-axios.defaults.baseURL = "http://localhost:1909/"   // 基路径
+// axios.defaults.baseURL = "http://localhost:2021/"   // 基路径
+axios.defaults.baseURL = "http://dengchuang.top:2021/"   // 基路径
 axios.defaults.headers.common['token'] = token;     // token 为 空
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 

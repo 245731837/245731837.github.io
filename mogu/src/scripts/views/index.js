@@ -1,16 +1,17 @@
 import React, {Component} from "react";
 import {Switch,Route,Redirect } from "react-router-dom";
-
+import Guide from "./guide"
 //引入懒加载
 import Lazyload from "~/lazyload"
 
 const Main =Lazyload(()=>import("./main"))
 
-const Guide =Lazyload(()=>import("./guide"))
+// const Guide =Lazyload(()=>import("./guide"))
 // const Search =Lazyload(()=>import("./search"))
 const Login =Lazyload(()=>import("./login"))
-// const Scan =Lazyload(()=>import("./scan"))
-// const Photo =Lazyload(()=>import("./photo"))
+const Details =Lazyload(()=>import("./details"))
+const Car =Lazyload(()=>import("./car"))
+const Search =Lazyload(()=>import("./search"))
 
 
  class ViewsIndex extends Component {
@@ -21,9 +22,9 @@ const Login =Lazyload(()=>import("./login"))
                 <Route path="/main" component={ Main } />
                 <Route path="/guide" component={ Guide } />
                 <Route path="/login" component={ Login } />
-                {/* <Route path="/search" component={ Search } />
-                <Route path="/scan" component={ Scan } />
-                <Route path="/photo" component={ Photo } /> */}
+                <Route path="/car" component={ Car } />
+                <Route path="/search" component={ Search } />
+                <Route path ="/details/:iid" component={Details}/>
                 <Route render={()=>(<Redirect to="/main/home"/>)}/>
             </Switch>
           

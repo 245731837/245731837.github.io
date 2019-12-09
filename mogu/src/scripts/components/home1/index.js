@@ -17,11 +17,11 @@ class Mine extends Component {
         return (
             <div className="home1">
                 {
-                    HomeData.home1List.map((item,index)=>{
+                    HomeData.home1List&&HomeData.home1List.map((item,index)=>{
                         return(
                             <a href={item.modelData.link} className="wrap" key={index}>
                                 <img src={item.modelData.cover} alt=""/>
-                                <p>{item.modelData.desc}</p>
+                                <p id="hp" >{item.modelData.desc}</p>
                             </a>
 
                         )
